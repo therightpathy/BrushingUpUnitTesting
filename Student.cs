@@ -89,12 +89,12 @@ namespace BrushingUpUnitTesting
         {
             if (semester < 1)
             {
-                throw new ArgumentOutOfRangeException("semester", semester, "Semester must be between 1-8");
+                throw new ArgumentException("Semester must be between 1-8");
             }
 
             if (semester > 8)
             {
-                throw new ArgumentOutOfRangeException("semester", semester, "Semester must be between 1-8");
+                throw new ArgumentException("Semester must be between 1-8");
             }
         }
 
